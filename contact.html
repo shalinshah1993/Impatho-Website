@@ -58,8 +58,17 @@
 					<textarea style="width: 500px;" id="messageText" placeholder="You can enter your question or feedback over here. Please take your time and give us a brief response because we don't mind reading long good questions and feedbacks."></textarea>
 				</div>
 			</div>
-			<button class="medium red"> Reset Response</button>
-			<button class="medium green"> Submit Response</button>
+
+			<script>
+			function clearFields() {
+			    document.getElementById("emailText").value = "";
+			    document.getElementById("nameText").value = "";
+			    document.getElementById("messageText").value = "";
+			}
+			</script>
+
+			<button class="medium red" onClick="clearFields()" > Reset Response</button>
+			<button class="medium green"  > Submit Response</button>
 		</div>
 	</div>
 </div>
